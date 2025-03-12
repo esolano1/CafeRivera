@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+/*    font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    background-color: red;
+    font-size: larger;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    background-color: #2b2622;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+
+}
+
+
+
+#searchInput { 
+color: red;
+width: 20%;
+height: 5vh;
+border-radius: 8px;
+padding: 1%;
+}
+
+h1 {
+margin-bottom: 1%;
+color: aliceblue;
+}
+
+nav {
+    background-color: rgb(85, 131, 85);
+    height: 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: inline;  
+    background-color: rgb(80, 113, 80);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 2%;
+    margin: 3%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(8, 4, 4);
+    padding: 1%;
+    font-size: large;
+}
+
+nav ul li:hover {
+    background-color: #524b4b; /* Cambia el color de fondo cuando se pasa el mouse */
+}
+
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 1%;
+}
+
+
+#general {
+    background-color: rgb(255, 239, 239);
+    margin-bottom: 1%;
+    padding: 1%;
+    border-radius: 3%;
+    display: flex; /* Usamos flexbox para alinear las imágenes horizontalmente */
+    justify-content: space-between; /* Espaciado entre las imágenes */
+    gap: 1%; /* Añade espacio entre las imágenes */
+    flex-wrap: nowrap;
+    overflow-x: hidden; /* Elimina el scroll horizontal */
+}
+
+#general img {
+    border-radius: 5%;
+    max-width: 32.6%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    flex: 1 1 30%;
+    scroll-snap-align: center;  /* Alinea las imágenes al hacer scroll */
+}
+
+.information {
+    display: flex;  /* Usa flexbox para organizar los elementos */
+    align-items: flex-start;  /* Centra verticalmente el contenido */
+    padding: 1%;
+}
+
+
+footer{
+    background-color: #2b2622;
+    text-align: center;
+    height: 35vh;
+    bottom: 0;
+    padding-top: 2%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#p-in-footer {
+    background-color: #211d19;
+    padding: 1%;
+}
+
+.politicas {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    width: 20%;
+    color: aliceblue;
+}
+
+.politicas a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1%;
+}
+
+.politicas a:hover {
+    text-decoration: underline;
+}
+
+
+.scroll-button-left {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    left: .5%;
+    height: 10%;
+    width: 3%;
+}
+
+.scroll-button-right {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 90%;
+    transform: translateY(-50%);
+    right: .5%;
+    height: 10%;
+    width: 3%;
+}
+
+
+

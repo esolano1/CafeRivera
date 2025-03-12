@@ -1,0 +1,16 @@
+#nosotros {
+    background-color: rgb(255, 239, 239);
+    margin-bottom: 1%;
+    padding: 1%;
+    border-radius: 3%;
+}
+
+.information {
+    display: flex;  /* Usa flexbox para organizar los elementos */
+    align-items: flex-start;  /* Centra verticalmente el contenido */
+    padding: 1%;
+}
+
+.texto {
+    margin-right: 6%;
+}
