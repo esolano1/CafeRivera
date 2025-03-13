@@ -8,11 +8,12 @@
 html {
     width: 100%;
     height: 100%;
+    background-color: red;
     scroll-behavior: smooth;
 /*    font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Roboto', sans-serif;
  /*   background-color: red; */
-    font-size: larger;
+    font-size: small;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
 
 
 header {
-    background-color: #2b2622;
+    background-color: #2a2521;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,14 +37,20 @@ header {
 
 }
 
-
+main {
+    flex: 1;
+}
 
 #searchInput { 
 color: red;
-width: 20%;
-height: 5vh;
-border-radius: 8px;
+width: 30%;
+height: auto;
+border-radius: 9px;
 padding: 1%;
+}
+
+input::placeholder {
+    font-size: .9vw;
 }
 
 h1 {
@@ -52,23 +59,25 @@ color: aliceblue;
 }
 
 nav {
-    background-color: rgb(85, 131, 85);
+/*    background-color: rgb(85, 131, 85); */
+    background-color: #2a2521;
     height: 4%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-ul {
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 12%;
 
 }
 
 nav ul li {
     display: inline;  
-    background-color: rgb(80, 113, 80);
+    background-color: rgb(36, 45, 36);
     border-radius: 10px;
     font-weight: bold;
     padding: 2%;
@@ -77,15 +86,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(8, 4, 4);
+    color: white;
     padding: 1%;
-    font-size: large;
+    font-size: small;
 }
 
 nav ul li:hover {
-    background-color: #524b4b; /* Cambia el color de fondo cuando se pasa el mouse */
+    background-color: #3f3939; /* Cambia el color de fondo cuando se pasa el mouse */
 }
-
 
 h2 {
     text-align: center;
@@ -95,6 +103,46 @@ h3 {
     margin-top: 1%;
 }
 
+#image-container {
+    position: relative;
+    display: inline-block;
+}
+
+#image-effect {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: iluminacion 4s ease-in-out infinite;
+    padding-left: .5%;
+}
+
+@keyframes iluminacion {
+    0% {
+        opacity: 0.6;
+        filter: brightness(0.7);
+    }
+    50% {
+        opacity: 1;
+        filter: brightness(1.5);
+    }
+    100% {
+        opacity: 0.6;
+        filter: brightness(0.7);
+    }
+}
+
+#text-effect {
+    position: absolute;
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajusta para que el texto esté perfectamente centrado */
+    color: rgb(255, 186, 186);
+    font-size: 5vw;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para hacer que el texto sea más visible */
+    text-align: center;
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
 
 #general {
     background-color: rgb(255, 239, 239);
@@ -107,22 +155,59 @@ h3 {
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-x: hidden; /* Elimina el scroll horizontal */
+    position: relative;
 }
 
 #general img {
     border-radius: 5%;
-    max-width: 32.6%;
+/*    max-width: 32.6%; */
+    max-width: 20%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
     flex: 1 1 30%;
     scroll-snap-align: center;  /* Alinea las imágenes al hacer scroll */
+/*    border: 2px solid green;   */
+/*    animation: slide 5s infinite; */
 }
+/*
+@keyframes slide {
+    0% {
+        opacity: 1;;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#general img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#general img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+#general img:nth-child(3) { 
+    animation-delay: 4s;
+}
+*/
+
 
 .information {
     display: flex;  /* Usa flexbox para organizar los elementos */
-    align-items: flex-start;  /* Centra verticalmente el contenido */
+    align-items: center;  /* Centra verticalmente el contenido */
     padding: 1%;
+    justify-content: center;
 }
 
 
@@ -136,6 +221,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
 #p-in-footer {
@@ -157,6 +243,17 @@ footer{
     padding: 1%;
 }
 
+.redes ul {
+display: flex;
+justify-content: center;
+
+}
+
+.redes li {
+list-style-type: none;
+margin: 10%;
+}
+
 .politicas a:hover {
     text-decoration: underline;
 }
@@ -170,7 +267,7 @@ footer{
     cursor: pointer;
     border-radius: 5px;
     position: absolute;
-    top: 90%;
+    top: 50%;
     transform: translateY(-50%);
     left: .5%;
     height: 10%;
@@ -185,11 +282,12 @@ footer{
     cursor: pointer;
     border-radius: 5px;
     position: absolute;
-    top: 90%;
+    top: 50%;
     transform: translateY(-50%);
     right: .5%;
     height: 10%;
     width: 3%;
+    z-index: 10;
 }
 
 
@@ -206,12 +304,17 @@ footer{
             padding: 1%;
         
         }
-        
+    
+        h1 {
+            font-size: 3vw;
+        }
 
     nav {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }    
+
 
 .information {
 justify-content: space-between;

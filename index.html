@@ -11,12 +11,12 @@
  
     <header>
         <h1>Café Rivera - Finca El Roble</h1>
-        <input type="text" id="searchInput" placeholder="Buscar..." onkeyup="search()">
-        <img src="Images/header/logo.jpg" alt="Logo de la empresa" height="90%" width="10%">
+        <input type="text" id="searchInput" placeholder="Buscar en todo el sitio" onkeyup="search()">
+        <img src="Images/header/logo.jpg" alt="Logo de la empresa" width="5%">
     </header>
     <main>
 
-        <nav>
+        <nav id="menu">
             <ul>
                 <li><a href="Nosotros/nosotros.html">Nosotros</a></li>
                 <li><a href="#productos">Productos</a></li>
@@ -24,12 +24,18 @@
             </ul>
 
             <ul>
-                <li><a href="#facebook">facebook</a></li>
-                <li><a href="#instagram">instagram</a></li>
-                <li><a href="#tiktok">tiktok</a></li>
+                <li><a href="https://www.facebook.com/share/1R35LqMh64/" target="_blank" title="Ir a la página de Facebook"><img src="Images/header/fb-logo.webp" alt="Logo de tiktok" width="28vw"></a></li>
+                <li><a href="#instagram"><img src="Images/header/ig-logo.png" alt="Logo de tiktok" width="30vw"></a></li>
+                <li><a href="#tiktok"><img src="Images/header/tiktok-logo-blanco.png" alt="Logo de tiktok" width="34vw"></a></li>
             </ul>
 
         </nav>
+
+
+<div id="image-container">
+    <img src="Images/image-effect/effect.jpg" alt="Café" id="image-effect">
+    <div id="text-effect">El sabor del verdadero café...</div>
+</div>
 
 
 <div id="general">
@@ -39,10 +45,13 @@
     <img src="Images/general/4.jpg" alt="Mata de Café">
     <img src="Images/general/5.jpg" alt="Mata de Café">
     <img src="Images/general/6.jpg" alt="Mata de Café">
+
+    <button class="scroll-button-left">⬅</button>
+    <button class="scroll-button-right">➡</button>
+
 </div>
   
-<button class="scroll-button-left">⬅</button>
-<button class="scroll-button-right">➡</button>
+
 
 
 </main>
@@ -65,6 +74,15 @@
         <a href="">Políticas de Compra</a>
         <a href="">Formas de Pago</a>
     </div>
+
+<div class="redes">
+    <ul>
+        <li><a href="https://www.facebook.com/share/1R35LqMh64/" target="_blank" title="Ir a la página de Facebook"><img src="Images/header/fb-logo.webp" alt="Logo de tiktok" width="28vw"></a></li>
+        <li><a href="#instagram"><img src="Images/header/ig-logo.png" alt="Logo de tiktok" width="30vw"></a></li>
+        <li><a href="#tiktok"><img src="Images/header/tiktok-logo-blanco.png" alt="Logo de tiktok" width="34vw"></a></li>
+    </ul>
+</div>
+
   </div>
 
     <p id="p-in-footer"><b>&copy; 2025 Café Rivera</b></p>
