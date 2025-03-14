@@ -333,6 +333,12 @@ flex-direction: column;
 .politicas {
     align-items: center;
     margin-bottom: 10%;
+
+    width: 50%;
+}
+
+.redes {
+    width: 50%;
 }
 
 .scroll-button-left {
