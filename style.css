@@ -29,7 +29,7 @@ body {
 
 
 header {
-    background-color: #2a2521;
+    background-color: #1a1714;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@ padding: 1%;
 }
 
 input::placeholder {
-    font-size: .9vw;
+    font-size: 100%;
 }
 
 h1 {
@@ -105,7 +105,9 @@ h3 {
 
 #image-container {
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
 }
 
 #image-effect {
@@ -161,7 +163,7 @@ h3 {
 #general img {
     border-radius: 5%;
 /*    max-width: 32.6%; */
-    max-width: 20%;
+    max-width: 30%;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -207,21 +209,21 @@ h3 {
     display: flex;  /* Usa flexbox para organizar los elementos */
     align-items: center;  /* Centra verticalmente el contenido */
     padding: 1%;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 
 footer{
     background-color: #2b2622;
     text-align: center;
-    height: 35vh;
+    min-height: 35vh;
     bottom: 0;
     padding-top: 2%;
     color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-x: hidden;
+
 }
 
 #p-in-footer {
@@ -315,15 +317,22 @@ margin: 10%;
         align-items: center;
     }    
 
+    header img {
+    width: 50%;        
+    }
 
 .information {
-justify-content: space-between;
+align-items: flex-start;
+justify-content: space-around;
 margin-left: 15%;
 margin-right: 4%;
+display: flex;
+flex-direction: column;
 }
 
 .politicas {
     align-items: center;
+    margin-bottom: 10%;
 }
 
 .scroll-button-left {
@@ -333,6 +342,35 @@ margin-right: 4%;
 .scroll-button-right {
     top: 40%;
 }
+
+
+header {
+    display: grid;
+    grid-template-columns: 5fr 1fr; /* Dos columnas, la segunda (imagen) ocupa más espacio */
+    grid-template-rows: auto auto; /* Dos filas automáticas, para que el contenido se ajuste */
+    grid-gap: 10px; /* Espacio entre los elementos */
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 1%;
+}
+
+header h1 {
+    grid-column: 1; /* El título ocupa la primera columna */
+    grid-row: 1; /* El título ocupa la primera fila */
+}
+
+header #searchInput {
+    grid-column: 1; /* El input ocupa la primera columna */
+    grid-row: 2; /* El input ocupa la segunda fila */
+}
+
+header img {
+    grid-column: 2; /* La imagen ocupa la segunda columna */
+    grid-row: span 2; /* La imagen ocupa ambas filas */
+    justify-self: center; /* Centra la imagen horizontalmente dentro de su celda */
+    align-self: center; /* Centra la imagen verticalmente dentro de su celda */
+}
+
+
 
 }
 
