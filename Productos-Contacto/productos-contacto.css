@@ -105,9 +105,7 @@ nav ul li:hover {
     margin-right: 6%;
 }
 
-img {
-    border-radius: 3%;
-}
+
 
 .information {
     display: flex;  /* Usa flexbox para organizar los elementos */
@@ -227,7 +225,7 @@ flex-direction: column;
 }
 
 
-header div{
+header div {
     display: grid;
     grid-template-columns: 5fr 1fr; /* Dos columnas, la segunda (imagen) ocupa más espacio */
     grid-template-rows: auto auto; /* Dos filas automáticas, para que el contenido se ajuste */
