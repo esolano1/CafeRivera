@@ -105,7 +105,7 @@ nav ul li:hover {
     margin-right: 6%;
 }
 
-.contactos, .cafes, .politicas-compras{
+.politicas-compras{
     background-color: rgb(255, 239, 239);
     margin-bottom: 1%;
     margin-left: 1%;
@@ -113,19 +113,104 @@ nav ul li:hover {
     border-radius: 3%;
 }
 
+#contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contactos {
+    background-color: rgb(255, 239, 239);
+    margin: 2% 0% 2% 1%;
+    padding: 2%;
+    border-radius: 3%;
+    width: 35%;
+    height: 40vh;
+
+    align-content: center; /*Alinea verticalmente */
+    text-align: center; /*Alinea horizontalmente */
+}
+
+.contactos p {
+    margin: 3%;
+}
+
+.precios {
+    background-color: rgb(255, 239, 239);
+    margin-bottom: 1%;
+    margin-left: 1%;
+    padding: 2%;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cafes {
+    background-color: rgb(255, 239, 239);
+    margin-bottom: 1%;
+    margin-left: 1%;
+    padding: 2%;
+    border-radius: 3%;
+    display: grid;
+    grid-template-columns: 6fr 1.5fr;
+    grid-template-rows: 1fr 5fr;
+
+}
+
+.cafes h2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.cafes p {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: start;
+    margin: 0;
+    padding-right: 10%;
+}
+
+.cafes img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 65%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .links {
     margin-top: 1.5%;
     text-align: center;
     margin-bottom: 1.1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 div a {
-    background-color: rgb(244, 165, 165);
+    background-color: rgb(176, 138, 138);
+    width: 80%;
+    align-content: center;
     color: white;
     padding: 1% 2%;
     border-radius: 5px;
     text-decoration: none;
     margin-right: 1%;
+}
+
+
+div a:hover {
+    background-color: rgb(245, 147, 147);
 }
 
 .information {
