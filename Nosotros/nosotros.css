@@ -44,6 +44,22 @@ border-radius: 9px;
 padding: 1%;
 }
 
+#logo-a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+#logo {
+    width: 4vw;
+    max-width: 60px;
+    height: auto;
+    display: block;
+}
+
 input::placeholder {
     font-size: 100%;
 }
@@ -103,10 +119,13 @@ nav ul li:hover {
 
 .texto {
     margin-right: 6%;
+
 }
 
-img {
+.mata-cafe {
     border-radius: 3%;
+    width: 80%;
+margin-bottom: 5%;    
 }
 
 .information {
@@ -116,6 +135,12 @@ img {
     justify-content: flex-start;
 }
 
+#mata-cafe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 footer{
     background-color: #2b2622;

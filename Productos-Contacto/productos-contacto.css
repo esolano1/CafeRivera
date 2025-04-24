@@ -8,7 +8,6 @@
 html {
     width: 100%;
     height: 100%;
-
 }
 
 body {
@@ -29,8 +28,8 @@ header div{
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-
 }
+
 
 main {
     flex: 1;
@@ -42,6 +41,22 @@ width: 30%;
 height: auto;
 border-radius: 9px;
 padding: 1%;
+}
+
+#logo-a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+#logo {
+    width: 4vw;
+    max-width: 60px;
+    height: auto;
+    display: block;
 }
 
 input::placeholder {
@@ -197,7 +212,7 @@ nav ul li:hover {
     justify-content: space-between;
 }
 
-div a {
+.link-boton {
     background-color: rgb(176, 138, 138);
     width: 80%;
     align-content: center;
@@ -209,7 +224,7 @@ div a {
 }
 
 
-div a:hover {
+.link-boton:hover {
     background-color: rgb(245, 147, 147);
 }
 
