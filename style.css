@@ -327,11 +327,20 @@ margin: 10%;
             font-size: 3vw;
         }
 
+
+    /* Con esto forzo a que mi segundo <ul> se mantenga centrado en la reducción */    
     nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }    
+    }
+    
+
+    nav ul li {
+        margin: 2px;
+        padding: 2%;
+        text-align: center;
+    }
 
     header img {
     width: 50%;        
@@ -372,6 +381,7 @@ flex-direction: column;
 
 
 header div {
+    width: 100%;
     display: grid;
     grid-template-columns: 5fr 1fr; /* Dos columnas, la segunda (imagen) ocupa más espacio */
     grid-template-rows: auto auto; /* Dos filas automáticas, para que el contenido se ajuste */
@@ -390,14 +400,16 @@ header #searchInput {
     grid-row: 2; /* El input ocupa la segunda fila */
 }
 
-header img {
+#logo-a {
     grid-column: 2; /* La imagen ocupa la segunda columna */
     grid-row: span 2; /* La imagen ocupa ambas filas */
     justify-self: center; /* Centra la imagen horizontalmente dentro de su celda */
     align-self: center; /* Centra la imagen verticalmente dentro de su celda */
 }
 
-
+#logo {
+width: 70%;
+}
 
 }
 

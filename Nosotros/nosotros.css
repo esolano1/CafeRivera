@@ -24,6 +24,7 @@ body {
 
 
 header div{
+    width: 100%;
     background-color: #1a1714;
     display: flex;
     justify-content: space-between;
@@ -214,6 +215,12 @@ margin: 10%;
         align-items: center;
     }    
 
+    nav ul li {
+        margin: 2px;
+        padding: 2%;
+        text-align: center;
+    }
+
     header img {
     width: 50%;        
     }
@@ -221,10 +228,17 @@ margin: 10%;
 .information {
 align-items: center;
 justify-content: space-around;
-
-
 display: flex;
 flex-direction: column;
+}
+
+.texto {
+    margin-right: 0;
+    margin-left: 1%;
+}
+
+h3 {
+text-align: center;
 }
 
 .politicas {
@@ -253,6 +267,7 @@ flex-direction: column;
 
 
 header div{
+    width: 100%;
     display: grid;
     grid-template-columns: 5fr 1fr; /* Dos columnas, la segunda (imagen) ocupa más espacio */
     grid-template-rows: auto auto; /* Dos filas automáticas, para que el contenido se ajuste */
@@ -271,11 +286,26 @@ header #searchInput {
     grid-row: 2; /* El input ocupa la segunda fila */
 }
 
-header img {
+/*header img {
+    grid-column: 2; // La imagen ocupa la segunda columna
+    grid-row: span 2; // La imagen ocupa ambas filas
+    justify-self: center; // Centra la imagen horizontalmente dentro de su celda
+    align-self: center; // Centra la imagen verticalmente dentro de su celda
+}
+*/
+
+
+#logo-a {
     grid-column: 2; /* La imagen ocupa la segunda columna */
     grid-row: span 2; /* La imagen ocupa ambas filas */
     justify-self: center; /* Centra la imagen horizontalmente dentro de su celda */
     align-self: center; /* Centra la imagen verticalmente dentro de su celda */
+}
+
+#logo {
+width: 70%;
+}
+
 }
 
 

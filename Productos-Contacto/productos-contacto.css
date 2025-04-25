@@ -180,6 +180,10 @@ nav ul li:hover {
     grid-row-start: 1;
     grid-row-end: 2;
 
+/* 
+  align-items: center; // Alinea verticalmente al hijo, se utiliza para dar coordenadas a un hijo, es decir, este contenedor da las coordenadas a los hijos (esto es para grid únicamente) 
+  justify-items: center; // Alinea horizontalmente al hijo, se utiliza para dar coordenadas a un hijo, es decir, este contenedor da las coordenadas a los hijos (esto es para grid únicamente)
+*/
 }
 
 .cafes p {
@@ -201,6 +205,8 @@ nav ul li:hover {
     height: auto;
     object-fit: cover;
     border-radius: 10px;
+    align-self: center; /* Alinea verticalmente a este mismo hijo individualmente, es decir, el hijo mismo se da sus pripias coordenadas (esto es para grid únicamente)*/
+    justify-self: center; /* Alinea horizontalment a este mismo hijo individualmente, es decir, el hijo mismo se da sus pripias coordenadas (esto es para grid únicamente)*/
 }
 
 .links {
@@ -308,9 +314,39 @@ margin: 10%;
         align-items: center;
     }    
 
+    nav ul li {
+        margin: 2px;
+        padding: 2%;
+        text-align: center;
+    }
+
+
     header img {
     width: 50%;        
     }
+
+.cafes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cafes p {
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-bottom: 2%;
+}
+
+.contactos{
+    overflow-wrap: break-word; /* Con esto rompemos las palabras únicamente cuando ya no cabe una palabra en el contenedor */
+    /*word-break: break-word; // Para mí, funciona igual que la de arriba */
+    /* word-break: break-all; // Con esto rompemos las palabras en todo momento */
+}
+
+.politicas-compras {
+    margin-left: 2%;
+    padding-left: 6%;
+}
 
 .information {
 align-items: center;
@@ -347,6 +383,7 @@ flex-direction: column;
 
 
 header div {
+    width: 100%;
     display: grid;
     grid-template-columns: 5fr 1fr; /* Dos columnas, la segunda (imagen) ocupa más espacio */
     grid-template-rows: auto auto; /* Dos filas automáticas, para que el contenido se ajuste */
@@ -365,13 +402,24 @@ header #searchInput {
     grid-row: 2; /* El input ocupa la segunda fila */
 }
 
+/*
 header img {
+    grid-column: 2; // La imagen ocupa la segunda columna
+    grid-row: span 2; // La imagen ocupa ambas filas
+    justify-self: center; // Centra la imagen horizontalmente dentro de su celda
+    align-self: center; // Centra la imagen verticalmente dentro de su celda
+}
+*/
+#logo-a {
     grid-column: 2; /* La imagen ocupa la segunda columna */
     grid-row: span 2; /* La imagen ocupa ambas filas */
     justify-self: center; /* Centra la imagen horizontalmente dentro de su celda */
     align-self: center; /* Centra la imagen verticalmente dentro de su celda */
 }
 
+#logo {
+width: 70%;
+}
 
 
 }
