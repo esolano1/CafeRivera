@@ -45,11 +45,27 @@ main {
 }
 
 #searchInput { 
-color: red;
+color: rgb(0, 0, 0);
 width: 30%;
 height: auto;
 border-radius: 9px;
 padding: 1%;
+}
+
+#results { 
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    height: auto;
+    border-radius: 9px;
+    padding: 1%;
+    text-align: center;
+}
+
+#results a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(235, 229, 229);
+    border-radius: 10px;;
 }
 
 
