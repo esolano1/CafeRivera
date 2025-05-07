@@ -131,6 +131,7 @@ h3 {
     padding: 1%;
 }
 
+/* Tengo este selector para hacer pequeña la imagen para meter el maps */
 #image-container img {
     width: 70%;
     height: auto;
@@ -164,7 +165,7 @@ h3 {
 #text-effect {
     position: absolute;
     top: 50%; /* Centrado vertical */
-    left: 35%; /* Centrado horizontal */
+    left: 35%; /* Centrado horizontal. Lo tengo en 35% para que el texto se vaya más a la izquierda para que quepa bien el maps */ 
     transform: translate(-50%, -50%); /* Ajusta para que el texto esté perfectamente centrado */
     color: rgb(255, 186, 186);
     font-size: 5vw;
