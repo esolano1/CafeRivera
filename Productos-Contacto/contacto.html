@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="productos-contacto.css">
     <link rel="icon" href="../Images/header/favicon-logo.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/zod@3.22.4/lib/index.umd.min.js"></script>
 
 </head>
 <body>
@@ -68,6 +69,27 @@
         </section>
 
     </article> 
+
+    <section class="formulario">
+    <h2>📬 Envíanos un mensaje</h2><br>
+    <form id="form-contacto">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="3"></textarea><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+ <!-- <div id="mensaje-confirmacion" style="display:none; margin-top: 1rem;"></div>-->
+  <div id="errores"></div>
+
+  </section>
+
     
     </main>    
 
@@ -103,5 +125,6 @@
   
   </footer>
 
+<script src="sections.js"></script>
 </body>
 </html>

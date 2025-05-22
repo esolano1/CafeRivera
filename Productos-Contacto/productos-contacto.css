@@ -147,6 +147,17 @@ nav ul li:hover {
     text-align: center; /*Alinea horizontalmente */
 }
 
+.formulario {
+    background-color: rgb(255, 239, 239);
+    margin: 2% 0% 2% 33%;
+    padding: 2%;
+    border-radius: 3%;
+    width: 35%;
+    height: 40vh;
+
+    text-align: center; /*Alinea horizontalmente */
+}
+
 .contactos p {
     margin: 3%;
 }
